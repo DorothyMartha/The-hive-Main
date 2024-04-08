@@ -1,0 +1,757 @@
+/*This edits the format of the whole page*/
+*, :after, :before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*color:#350827;*/
+}
+
+/*This is for the header section by George*/
+#header{
+    background-color: #350827;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #000;
+    top:0;
+}
+
+#header-title {
+    margin: 0; /* Remove default margin */
+}
+/*This is for the navigation bar*/
+.nav {
+    list-style: none;
+    justify-content: center;
+    margin-left: 35%;
+    overflow: hidden;
+  }
+
+  .nav a {
+    color: #350827;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    padding: 14px 16px;
+    font-size: 15px;
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .nav a.active{
+    background-color: #5F9EA0;
+    color: #532345;
+  }
+
+
+
+/*This the general format of the Contact body.*/
+contactContainer{
+    width: 100%;
+    height: fit-content;
+    max-height: fit-content;
+    background-color: #FFFFFF;
+    color: #350827;
+}
+/*This formats the Contact heading on the contact page.*/
+.contactheader{
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-weight: 20;
+    font-size: 30px;
+    padding-left:50px ;
+    padding-top:80px ;
+    padding: bottom 20px;
+    padding-right:30px ;
+    color: #350827;
+}
+/*This formats the introductory image and description on the contact page*/
+.briefdescription{
+    width: 100%;
+    height: 600px;
+    padding: 20px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+/*Css for the Overview page opening*/
+/*location css*/
+  .intro{
+    text-align: justify;
+  }
+
+  .location{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    margin-right: 20%;
+    
+  }
+
+  .overview-items{
+    color: #350827;
+  }
+  .section-header{
+    align-content: center;
+    font-size: x-large;
+    padding-left: 15%;
+
+  }
+  h1,h2{
+    text-align: center;
+    font-size: x-large;
+    color: #350827;
+    
+  }
+  h1{
+    font-size: xx-large;
+  }
+  .image-text{
+    /*padding-right: 10px;*/
+    margin-left: 10%;
+  }
+  .image{
+    margin-right: 15%;
+  }
+  .description{
+    float: right;
+    width: 60%;
+    /*margin-top: 0px;*/
+    margin-left: 1%;
+    padding-right: 10%;
+    align-content: baseline;
+  }
+
+/*This formats the introductory image on the contact page*/
+.Contactimage{
+    flex:1;
+    float: left;
+    max-width: 800px;
+    margin: auto;
+    width: 50%;
+    height: 300px;
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+}
+.Contactimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.IntroInfo{
+    flex:1;
+    float: right;
+    max-width: 800px;
+    margin: auto;
+    width: 30%;
+    height: 300px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    
+}
+.IntroInfo p{
+    text-align: left;
+    font-weight: 20;
+    font-size: 20px;
+    position: relative;
+    color:#350827
+}
+@media (max-width: 600px){
+    .Contactimage{
+        width: 100%;
+    }
+    .IntroInfo{
+        width: 100%;
+    }
+}
+
+
+/*This edits the map area and its brief description.*/
+.hotelmap{
+    width :100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #350827;
+    background-color: rgb(239, 239, 234);
+}
+/*This formats the data on the left the map*/
+.mapdescription{
+    background-color:  rgb(239, 239, 234);
+    width: 42%;
+    float: left;
+    height: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mapdescription h1{
+    text-align: left;
+    font-weight:  20px;
+    font-size: 35px;
+    position: relative;
+}
+.mapdescription p{
+    text-align: left;
+    font-weight:  20px;
+    font-size: 25px;
+    position: relative;
+}
+
+.mapImage{
+    /*background-color: aqua;*/
+    width: 55%;
+    margin: 0 auto;
+    height: 800px;
+}
+.mapImage iframe{
+    object-fit: cover;
+}
+
+.maprightborder{
+    background-color: rgb(239, 239, 234);
+    width: 3%;
+    float: right;
+    height: 800px;
+}
+
+/*This formats the form area and its description as well.*/
+.contactform{
+    width :100%;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #350827;
+}
+.contactformIntro{
+    float: left;
+    width:30%;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+}
+.contactformArea{
+    float: right;
+    width:60%;
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+.input[type="text"]{
+    width: 70%;
+    height: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.textarea{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+
+}
+/*This formats the form submit button.*/
+.formbutton {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.formbutton[type="submit"]{
+    width: 80%;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600px;
+    margin-top: 10px;
+    background-color: #350827;
+    padding: 20px 30px;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+
+}
+.formbutton[type="submit"]:hover{
+    background-color: #532345;
+    transition: 0.5s;:active
+}
+.button[type="submit"]:active{
+    color: #252424;
+}
+
+
+
+
+/*This formats the additional information area*/
+.AdditionalInfo{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(239, 239, 234);
+    color: #350827;
+}
+.AdditionalInfo i{
+    color: #350827 ;
+}
+
+
+
+
+/*This edits the general format of the footer*/
+footer{
+        margin-top: auto;
+        background-color: #350827;
+    }
+/*This formats whatever is contained in the footer*/
+.footerContainer{ 
+    width: 100%;
+    height: fit-content;
+    max-height: fit-content;
+    padding: 20px 40px;
+    /*padding: 70px 30px 20px;*/
+}
+
+/*This formats the code in the socialIcons class of the footer*/
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #000000;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: medium;
+    color: #350827;
+    opacity: 0.9; 
+}
+
+/*Hover Effects on the social media icons */
+.socialIcons a:hover{
+    background-color: #5A5A5A;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover{
+    color: #000000;
+    transition: 0.5s;
+}
+
+/*This formats the text in the navigation class of the footer*/
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+     display: flex;
+     justify-content: center;
+     list-style-type: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    color: #5A5A5A;
+    opacity:1;
+}
+
+/*This formats the code in the bottom class of the footer.*/
+.footerBottom{
+    background-color: #2c091c;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: #fff;
+}
+
+/*This formats the content in the designer class of the footer*/
+.designer{
+    opacity: 0.7;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*This edits the footer to be balanced even on a mobile device*/
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/*The image slide code*/
+
+
+/* styles.css */
+.suites-container {
+    display: flex; /* Use flexbox to manage child divs */
+    flex-wrap: wrap;
+    position:relative;
+    width: 100%;
+    padding:20px 120px;
+    /*padding-right:120px;*/
+    height:650px;
+    margin-bottom: 20px;
+    /*border-style: solid;
+    border-color: #000;*/
+    color: #350827;
+}
+
+.prices{
+    /*border: solid;*/
+    width: 100%;
+    height:50px;
+    text-align: center;
+    background-color: rgb(240, 239, 238);
+}
+
+.price-value{
+    font-family:monospace;
+    font-size: 38px;
+    text-decoration: wavy;
+    text-align: center;
+    text-shadow: #532345;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.section-header, .description > .intro, .room-special{
+    color:#350827;
+}
+.essential-container {
+    flex:1;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float:left;
+    /*border-radius:15px 50px;*/
+    bottom:0;
+}
+
+.executive-container {
+    flex:1;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float:right;
+    /*border-radius:15px 50px;*/
+    bottom:0;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book {
+    background-color: #350827;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.seemore {
+    background-color: #fff;
+    color: #350827;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*suites css introduction by Nicholas*/
+  .intro{
+    text-align: justify;
+  }
+  .suites{
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+    margin-right: 20%;
+    
+  }
+  .section-header{
+    float: left;
+    font-size: x-large;
+    padding-left: 15%;
+
+  }
+  .description{
+    float: right;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding-right: 15%;
+    align-content: baseline;
+  }
+
+  /*This CSS is for the Singular rooms*/
+  header {
+  /*background-color: #350827;*/
+  color: #350827;
+  padding: 20px;
+  text-align: center;
+}
+
+.room-images {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.room-images img {
+  width: 45%;
+  max-width: 400px;
+}
+
+.room-description {
+  /*padding: 0 20px;*/
+  padding: 20px 500px 20px 500px;
+  color:#350827;
+}
+
+.booking-form {
+  padding: 20px 500px 20px 500px;
+  background-color: #f9f9f9;
+  color:#350827;
+  
+}
+
+.booking-form h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color:#350827;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color:#350827;
+}
+
+/This formats the form submit button./
+.formbutton {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.formbutton[type="submit"]{
+    width: 80%;
+    position: relative;
+    font-size: 25px;
+    font-weight: 600px;
+    margin-top: 10px;
+    background-color: #350827;
+    padding: 20px 30px;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+
+}
+.formbutton[type="submit"]:hover{
+    background-color: #532345;
+    transition: 0.5s;:active
+}
+.formbutton[type="submit"]:active{
+    color: #252424;
+}
+/*
+/*.suitesContent{
+    width :100%;
+    height: 800px;
+    /*display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}*/
+
+/*DOROTHY*/
+.header-title {
+    color: #f9f7fa; /* Primary color */
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.nav a {
+    color: #0f172a; /* Text-dark color */
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Location section*/
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-text h2 {
+    font-size: 28px;
+    color: #080300; /* Secondary-color */
+    margin: 0;
+}
+
+.image-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.image-text ul li {
+    color: #000306; /* Text-light color */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.description {
+    max-width: 600px; /* Limit width of description */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description .intro {
+    color: #0f172a; /* Text-dark color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+.description hr {
+    border: none;
+    border-top: 1px solid #e0e4e9; /* Text-light color */
+    margin: 20px 0;
+}
+
+/*Room special*/
+.room-special {
+    margin-top: 40px;
+}
+
+.room-special {
+    margin-top: 40px;
+}
+
+.room-special span {
+    color: #491108; /* Secondary-color */
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.room-special i {
+    color: #3a024a; /* Primary-color */
+    font-size: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.room-special span {
+    color: #64748b; /* Text-light color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Space below each item */
+}
+
+.room-special i {
+    color: #3a024a; /* Primary-color */
+    font-size: 24px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.room-special span {
+    color: #902e07; /* Text-light color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Space below each item */
+}
+/*Footer*/
+
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Suites</title>
+    <style>
+           /* Additional CSS for the Suites page */
+           .description {
+            margin: 10px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .description p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .room-special {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .room-special span {
+            font-size: 20px;
+            color: #8b3408;
+            font-weight: bold;
+        }
+
+        .room-special i {
+            color: #3a024a;
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .suites-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .suites-container .essential-container,
+        .suites-container .executive-container {
+            width: 40%;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .suites-container .image-slider {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .suites-container .image-slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .suites-container .prices {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .suites-container .prices .price-value {
+            font-size: 24px;
+            color: #3a024a;
+        }
+
+        .suites-container .button-group {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .suites-container .button-group .book,
+        .suites-container .button-group .seemore {
+            padding: 10px 20px;
+            background-color: #3a024a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Add margin between buttons */
+        }
+
+        .suites-container .button-group .book:hover,
+        .suites-container .button-group .seemore:hover {
+            background-color: #e07e4c;
+        }
+        .suites-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Adjust this value as needed for the desired space */
+}
+
+.essential-container,
+.executive-container {
+  width: calc(50% - 15px); /* Adjust the width of each container based on the desired space and gap */
+  
+}
+
+.image-slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    max-height: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.image-slider img.active {
+    display: block;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!--This is the header Section-->
+        <header id="header">
+            <h1 class="header-title">The Hive</h1>
+            <p class="header-title">Where Opulence Meets Hospitality</p>
+        </header>
+        <div class="nav">
+            <a href="Overview.html" target="_blank">Overview</a>
+            <a href="Suites.html">Suites</a>
+            <a href="Contacts.html" target="_blank">Contact</a>
+        </div>
+        <div class="suites">
+            <div class="section-header">
+                <h1 class="section-header_text">Suites</h1>
+            </div>
+            <!-- Code for introduction-->
+            <div class="description">
+                <div class="intro">
+                    <p>Glorious natural light. Chic ambience. Modern to the core. Our spacious rooms and suites are designed with comfort front and centre. Wood finishes keep the ambience cosy, while fast WiFi keeps you connected. A perfect option when in search of luxury close to Entebbe road. Ugandan hotels like ours are sure to make your stay memorable!</p>
+                </div>
+                <hr>
+                <div class="room-special">
+                    <span >ALL ROOMS INCLUDE</span>
+                    <p></p>
+                    <i class="fa fa-wifi"></i><span>Free WiFi</span>
+                </div>
+            </div>
+        </div>
+        <!-- #region This is the suites container-->
+        <div class="suites-container">
+            <div class="essential-container">
+                <!--Experimental image slider-->
+                <div class="image-slider">
+                    <img src="images/dont crack.jpg" alt="Hotel Front View">
+                    <img src="images/Swimming pool.jpeg" alt="Swimming Pool">
+                    <img src="images/standard-room.webp" alt="Standard Room">
+                    <button class="prev" onclick="plusSlides(-1, 'essential')">❮</button>
+                    <button class="next" onclick="plusSlides(1, 'essential')">❯</button>
+                </div>
+                <div class="prices">
+                    <span class="price-value">$ 399 / UGX 120,000</span>
+                </div>
+                <div class="button-group">
+                    <a href="Essential.html#essentialForm" target="_blank"><button class="book">Book</button></a>
+                    <a href="Essential.html" target="_blank"><button class="seemore">See More</button></a>
+                </div>
+            </div>
+
+            
+
+            <div class="executive-container">
+                <!--Experimental image slider-->
+                <div class="image-slider">
+                    <img src="images/dont crack.jpg" alt="Hotel Front View">
+                    <img src="images/Swimming pool.jpeg" alt="Swimming Pool">
+                    <img src="images/standard-room.webp" alt="Standard Room">
+                    <button class="prev" onclick="plusSlides(-1, 'executive')">❮</button>
+                    <button class="next" onclick="plusSlides(1, 'executive')">❯</button>
+                </div>
+                <div class="prices">
+                    <span class="price-value">$ 399 / UGX 120,000</span>
+                </div>
+                <div class="button-group">
+                    <a href="Executive.html#executiveForm" target="_blank"><button class="book">Book</button></a>
+                    <a href="Executive.html" target="_blank"><button class="seemore">See More</button></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>  
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy </a></li>
+                        <li><a href="">Contact Us</a></li>  
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2024; Designed by <span class="designer">GROUP W</span></p>
+                </div>
+            </div>  
+        </footer>    
+    </div>
+</body>
+</html>
